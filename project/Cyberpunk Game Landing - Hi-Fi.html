@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>One Piece × Naruto × Cyberpunk — Hi-Fi Landing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Shippori+Mincho:wght@700;800&family=Yuji+Mai&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="hifi.css" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" data-screen-label="Nav">
+  <div class="brand">
+    <span class="mark"></span>
+    <span class="name">RŌNIN</span>
+  </div>
+  <nav class="nav-links">
+    <a href="#features">Game</a>
+    <a href="#features">World</a>
+    <a href="#features">Characters</a>
+    <a href="#news">News</a>
+    <a href="#cta">Store</a>
+  </nav>
+  <div class="nav-right">
+    <span class="nav-lang">EN ▾</span>
+    <button class="nav-play">Play Free ▸</button>
+    <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== MOBILE FULLSCREEN MENU ===== -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu__bg"></div>
+  <div class="mobile-menu__head">
+    <div class="brand"><span class="mark"></span><span class="name">RŌNIN</span></div>
+    <button class="mobile-menu__close" id="navClose" aria-label="Close menu">✕</button>
+  </div>
+  <nav class="mobile-menu__links">
+    <a href="#features" data-i="01">Game</a>
+    <a href="#features" data-i="02">World</a>
+    <a href="#features" data-i="03">Characters</a>
+    <a href="#news" data-i="04">News</a>
+    <a href="#cta" data-i="05">Store</a>
+  </nav>
+  <div class="mobile-menu__foot">
+    <button class="btn btn-primary btn-big mobile-menu__play">
+      <svg width="15" height="17" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0L10 6L0 12Z" fill="currentColor"/></svg>
+      <span>Play Free</span>
+    </button>
+    <div class="mobile-menu__meta">
+      <span class="nav-lang">EN ▾</span>
+      <div class="mobile-menu__social"><a>X</a><a>YT</a><a>DC</a><a>TW</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" data-screen-label="Hero">
+  <div class="hero__bg">
+    <img class="hero__art" src="images/luffy.webp" alt="" />
+    <span class="hero__orb a"></span>
+    <span class="hero__orb b"></span>
+  </div>
+  <div class="hero__scrim"></div>
+  <div class="hero__corners">
+    <span class="bracket tl"></span><span class="bracket tr"></span>
+    <span class="bracket bl"></span><span class="bracket br"></span>
+  </div>
+
+  <div class="hero__content">
+    <span class="kicker"><span class="dot"></span>Concept Trailer — Now Streaming</span>
+    <h1 class="hero__title">
+      <span class="l l1">One Piece<span class="x">×</span></span>
+      <span class="l l2">Naruto<span class="x">×</span></span>
+      <span class="l l3">Cyberpunk</span>
+    </h1>
+    <p class="hero__sub">Three legends. One fractured megacity. A neon-soaked crossover action-RPG where pirate, shinobi, and street-samurai collide.</p>
+    <div class="hero__cta">
+      <button class="btn btn-primary btn-big">
+        <svg width="15" height="17" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0L10 6L0 12Z" fill="currentColor"/></svg>
+        <span>Play the Game</span>
+      </button>
+      <button class="btn btn-ghost btn-big">
+        <svg width="14" height="16" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0L10 6L0 12Z" fill="currentColor"/></svg>
+        <span>Watch Trailer</span>
+        <span class="dur">2:14</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="hero__hud">
+    <div class="hero__hud-inner">
+      <div class="stat"><span class="k">PLAYERS</span><span class="v" data-count="2.4" data-suffix="M">0<span class="u">M</span></span></div>
+      <div class="stat"><span class="k">DISTRICTS</span><span class="v" data-count="6">0</span></div>
+      <div class="stat"><span class="k">RELEASE</span><span class="v">2026</span></div>
+      <div class="stat"><span class="k">RATING</span><span class="v">18<span class="u">+</span></span></div>
+      <div class="hero__scroll"><span class="line"></span>SCROLL</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TICKER ===== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>
+      <b>●</b> Season 1 — The Grid Awakens · Now Live
+      <b>●</b> Closed Beta Sign-Ups Open
+      <b>●</b> Cross-Play Enabled
+      <b>●</b> New District — Neon Harbor
+      <b>●</b> 2.4M Players Online
+    </span>
+    <span>
+      <b>●</b> Season 1 — The Grid Awakens · Now Live
+      <b>●</b> Closed Beta Sign-Ups Open
+      <b>●</b> Cross-Play Enabled
+      <b>●</b> New District — Neon Harbor
+      <b>●</b> 2.4M Players Online
+    </span>
+  </div>
+</div>
+
+<!-- ===== FEATURES ===== -->
+<section class="features wrap" id="features" data-screen-label="Features">
+  <div class="features__head reveal">
+    <span class="eyebrow"><span class="idx">01</span> Inside the Game</span>
+    <h2 class="sec-title">Built for the<br/>crossover.</h2>
+  </div>
+
+  <article class="feat-row reveal">
+    <div class="feat-media ph has-img">
+      <img src="images/luffy.webp" alt="Crossover combat key art" />
+      <span class="bracket tl"></span><span class="bracket br"></span>
+      <span class="ph__tag">GAMEPLAY CAPTURE · COMBAT</span>
+    </div>
+    <div class="feat-body">
+      <span class="num">FEATURE 01</span>
+      <h3>Crossover Combat</h3>
+      <p>Chain pirate haki, shinobi ninjutsu, and chrome-augmented blades into one fluid system. Swap fighters mid-combo and bring the city down around you.</p>
+      <div class="feat-chips">
+        <span class="chip">Real-time</span>
+        <span class="chip">3-Character Squad</span>
+        <span class="chip">Combo System</span>
+      </div>
+      <a class="feat-link">Learn more <span class="ar">→</span></a>
+    </div>
+  </article>
+
+  <article class="feat-row rev reveal">
+    <div class="feat-media ph">
+      <span class="bracket tr"></span><span class="bracket bl"></span>
+      <span class="ph__tag">ENVIRONMENT · MEGACITY</span>
+    </div>
+    <div class="feat-body">
+      <span class="num">FEATURE 02</span>
+      <h3>Open Neon City</h3>
+      <p>Roam a vertical megacity of rain-slick markets, corporate spires, and pirate undergrounds. Every one of six districts hides a faction war waiting to ignite.</p>
+      <div class="feat-chips">
+        <span class="chip">Open World</span>
+        <span class="chip">6 Districts</span>
+        <span class="chip">Day / Night Cycle</span>
+      </div>
+      <a class="feat-link">Explore the world <span class="ar">→</span></a>
+    </div>
+  </article>
+</section>
+
+<!-- ===== NEWS ===== -->
+<section class="news wrap" id="news" data-screen-label="News">
+  <div class="news__head reveal">
+    <div>
+      <span class="eyebrow"><span class="idx">02</span> Latest Transmissions</span>
+      <h2 class="sec-title">News &amp; updates</h2>
+    </div>
+    <a class="readmore">View all news <span class="ar">→</span></a>
+  </div>
+  <div class="news__list">
+    <article class="news-row reveal">
+      <div class="news-date"><span class="news-tag">PATCH</span><span class="news-d">MAY 28, 2026</span></div>
+      <div class="news-thumb ph has-img"><img src="images/luffy.webp" alt="" /><span class="ph__tag">THUMB</span></div>
+      <div>
+        <div class="news-title">Season 1 — The Grid Awakens goes live</div>
+        <div class="news-ex">New story arc, the Neon Harbor district, and three playable fighters drop in the largest update yet.</div>
+      </div>
+      <span class="news-arrow">→</span>
+    </article>
+    <article class="news-row reveal">
+      <div class="news-date"><span class="news-tag">DEVLOG</span><span class="news-d">MAY 14, 2026</span></div>
+      <div class="news-thumb ph"><span class="ph__tag">THUMB</span></div>
+      <div>
+        <div class="news-title">Designing the megacity skyline — an art deep-dive</div>
+        <div class="news-ex">Our environment team breaks down how the verticality and lighting of the city came together.</div>
+      </div>
+      <span class="news-arrow">→</span>
+    </article>
+    <article class="news-row reveal">
+      <div class="news-date"><span class="news-tag">EVENT</span><span class="news-d">APR 30, 2026</span></div>
+      <div class="news-thumb ph"><span class="ph__tag">THUMB</span></div>
+      <div>
+        <div class="news-title">Closed beta sign-ups are now open</div>
+        <div class="news-ex">Register now for a chance at early access across PC and console ahead of the full launch.</div>
+      </div>
+      <span class="news-arrow">→</span>
+    </article>
+  </div>
+</section>
+
+<!-- ===== MEGA CTA ===== -->
+<section class="mega" id="cta" data-screen-label="Mega CTA">
+  <div class="mega__bg"></div>
+  <div class="mega__inner reveal">
+    <span class="kicker" style="justify-content:center"><span class="dot"></span>Free to Play · PC · Console</span>
+    <h2 class="mega__title">The grid is<br/><span class="hl">open.</span></h2>
+    <p class="mega__sub">Pick your fighter. Claim your district. The crossover begins now.</p>
+    <div class="mega__btns">
+      <button class="btn btn-primary btn-big">
+        <svg width="15" height="17" viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0L10 6L0 12Z" fill="currentColor"/></svg>
+        <span>Play Now — Free</span>
+      </button>
+      <button class="btn btn-ghost btn-big"><span>View Editions</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="brand"><span class="mark"></span><span class="name">RŌNIN</span></div>
+        <p>// Concept landing page. Working brand “RŌNIN” is a placeholder; not affiliated with any rights holder.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col"><h4>Game</h4><a>Overview</a><a>Editions</a><a>System Req.</a><a>Roadmap</a></div>
+        <div class="footer__col"><h4>Media</h4><a>Trailers</a><a>Screenshots</a><a>Press Kit</a></div>
+        <div class="footer__col"><h4>Support</h4><a>Help Center</a><a>Contact</a><a>Server Status</a></div>
+        <div class="footer__col"><h4>Follow</h4><a>X / Twitter</a><a>YouTube</a><a>Discord</a><a>Twitch</a></div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© 2026 RŌNIN — CONCEPT STUDIO</span>
+      <div class="rate"><span>PEGI 18</span><span>ESRB M</span></div>
+      <span>TERMS · PRIVACY · COOKIES</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== TEXTURE OVERLAYS ===== -->
+<div class="fx fx-scan"></div>
+<div class="fx fx-grain"></div>
+<div class="fx fx-vig"></div>
+
+<!-- ===== TWEAKS ROOT ===== -->
+<div id="tweaks-root"></div>
+
+<script src="hifi.js"></script>
+
+<!-- Tweaks panel (React island — only manages CSS vars) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "accent": "#a30b2e",
+    "glow": "Magenta",
+    "titleFont": "Serif (Mincho)",
+    "texture": true,
+    "motion": true
+  }/*EDITMODE-END*/;
+
+  const FONTS = { "Serif (Mincho)": '"Shippori Mincho", serif', "Brush (Gyōsho)": '"Yuji Mai", serif' };
+  const GLOWS = { "Cyan": "#29d4d9", "Magenta": "#e23bd0", "Off": "#29d4d9" };
+
+  function TweaksApp() {
+    const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+    React.useEffect(() => {
+      const r = document.documentElement;
+      r.style.setProperty("--blood", t.accent);
+      r.style.setProperty("--title-font", FONTS[t.titleFont] || FONTS["Serif (Mincho)"]);
+      r.style.setProperty("--glow", GLOWS[t.glow] || GLOWS.Cyan);
+      r.style.setProperty("--glow-on", t.glow === "Off" ? "0" : "1");
+      r.style.setProperty("--tex", t.texture ? "1" : "0");
+      document.body.classList.toggle("no-motion", !t.motion);
+    }, [t]);
+
+    return (
+      <TweaksPanel>
+        <TweakSection label="Brand" />
+        <TweakColor label="Accent (blood red)" value={t.accent}
+          options={["#e23b2e", "#c5151c", "#8b0000", "#a30b2e"]}
+          onChange={(v) => setTweak("accent", v)} />
+        <TweakRadio label="Title font" value={t.titleFont}
+          options={["Serif (Mincho)", "Brush (Gyōsho)"]}
+          onChange={(v) => setTweak("titleFont", v)} />
+        <TweakSection label="Atmosphere" />
+        <TweakRadio label="Secondary glow" value={t.glow}
+          options={["Cyan", "Magenta", "Off"]}
+          onChange={(v) => setTweak("glow", v)} />
+        <TweakToggle label="Scanlines + grain" value={t.texture}
+          onChange={(v) => setTweak("texture", v)} />
+        <TweakToggle label="Motion" value={t.motion}
+          onChange={(v) => setTweak("motion", v)} />
+      </TweaksPanel>
+    );
+  }
+
+  ReactDOM.createRoot(document.getElementById("tweaks-root")).render(<TweaksApp />);
+</script>
+</body>
+</html>
